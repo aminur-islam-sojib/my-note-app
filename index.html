@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header flex mt-5">
+            <div>
+                <h1 class="text-2xl font-bold">My Notes</h1>
+            </div>
+            <div class="btn-header flex gap-3 mr-3">
+                <Button class="btn font-bold" onclick="openNoteDialog()">+ Add Note</Button>
+                <div class="moon">🌙</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="" id="notesContainer"></div>
+    </main>
+
+    <dialog>
+        <div class="noteDialog">
+            <div class="noteCard w-100">
+                <div class="card-header flex justify-btween ">
+                    <h2 class="text-xl font-bold">Add New Note</h2>
+                    <button class="cancelBtn text-xl font-bold">X</button>
+                </div>
+                <div class="card-title mt-5">
+                    <h1 class="text-md font-medium">Title</h1>
+                    <input type="text" id="title" placeholder="Enter note title....">
+                </div>
+                <div class="card-content">
+                    <h1 class="text-md font-medium">Content</h1>
+                    <textarea name="" id="content" placeholder="Write your note here..."></textarea>
+                </div>
+                <div class="btns">
+                    <button class="cancelBtn2 btn">Cancel</button>
+                    <button class="btn" id="saveBtn33">Add Note</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+</body>
+
+</html>
