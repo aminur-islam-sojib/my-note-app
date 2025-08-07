@@ -16,9 +16,15 @@
     "url": "https://github.com/aminur-islam-sojib/my-note-app/issues"
   },
   "homepage": "https://github.com/aminur-islam-sojib/my-note-app#readme",
-  "description": "",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2"
+  },
+  "description": ""
 }
