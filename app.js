@@ -81,7 +81,10 @@ function renderNote() {
       (note) => `
   
     <div class="card">
-    <h1 class = "inHeading">${note.title}</h1>
+    <div  class = "inHeading">
+    <h1>${note.title}</h1>
+    <div><button class="deleteBtn">❌</button></div>
+    </div>
     <p class = "inCaption">${note.content}</p>
     </div>
 
