@@ -24,14 +24,18 @@ function closeNoteDialog() {
   document.querySelector("dialog").close();
 }
 
-function saveNote(e) {
+function saveNote() {
   // e.preventDefault();
 
   const title = document.querySelector("#title").value;
   const content = document.querySelector("#content").value;
 
-  notes.push({ title: title, content: content });
-  renderNote();
+  if (title === "" && content === "") {
+    document.getElementById("errMsg").innerHTML = "Please Input a message";
+  } else {
+    notes.push({ title: title, content: content });
+    renderNote();
+  }
 }
 
 function saveNotes() {
@@ -60,8 +64,13 @@ saveBtn3.addEventListener("click", () => {
   saveNote();
   renderNote();
   saveNotes();
-  closeNoteDialog();
-  clearInput();
+
+  const title = document.querySelector("#title").value;
+  const content = document.querySelector("#content").value;
+  if (title !== "" || content !== "") {
+    closeNoteDialog();
+    clearInput();
+  }
 });
 
 function renderNote() {

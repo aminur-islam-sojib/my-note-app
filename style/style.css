@@ -111,6 +111,10 @@ textarea {
     color: white;
 }
 
+#errMsg {
+    color: rgb(255, 39, 39);
+}
+
 .cancelBtn2 {
     color: var(--text-color);
     background-color: var(--base-color);
